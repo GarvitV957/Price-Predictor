@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE_PRICE</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}" >
+</head>
+<body bgcolor="black">
+    <div class="box">
+        <h1>HOUSE PRICE</h1>
+    </div>
+    <br><br>
+
+    <div class="main">
+        <form method="POST", action="{{url_for('predict')}}" class="bb1">
+            <div class="box1">
+                <div class="a2">
+                    CRIM : <input type="text", name="a", placeholder="enter here"> <br><br>
+                    ZN      : <input type="text", name="b", placeholder="enter here"> <br><br>
+                    INDUS   : <input type="text", name="c", placeholder="enter here"> <br><br>
+                    CHAS    : <input type="text", name="d", placeholder="enter here"> <br><br>
+                    NOX     : <input type="text", name="e", placeholder="enter here"> <br><br>
+                    RM      : <input type="text", name="f", placeholder="enter here"> <br><br>
+                    AGE     : <input type="text", name="g", placeholder="enter here"> <br><br>
+                    </div>
+        
+                    <div class="a1">DIS     : <input type="text", name="h", placeholder="enter here"> <br><br>
+                    RAD     : <input type="text", name="i", placeholder="enter here"> <br><br>
+                    TAX     : <input type="text", name="j", placeholder="enter here"> <br><br>
+                    PTRATIO : <input type="text", name="k", placeholder="enter here"> <br><br>
+                    B       : <input type="text", name="l", placeholder="enter here"> <br><br>
+                    LSTAT : <input type="text", name="m", placeholder="enter here"> <br><br><br>
+                    </div>
+            </div>
+        
+            <button type="submit" class="button">Predict</button>
+            
+        </form>
+        <br><br><br>
+        {{ prediction_text }}
+    </div>
+    
+</body>
+</html>
