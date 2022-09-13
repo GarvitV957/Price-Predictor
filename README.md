@@ -14,6 +14,17 @@ Project is created with:
 * Pandas / Scikit-Learn
 
 ## Usage
-* 
+* static/css folder contains CSS files and images used
+* template folder contains HTML file
+* app.py is a python file written in flask frramework which we have to run
+* data.csv filse contains the data of houses
+* house.joblib and model.pkl has model of stored
+* myproject.py has the code for making the models, regression
+
+### -> After installation of these folders and files, you have to run app.py file
+### -> Then you'll get a link which will redirect you to webpage.
+### -> In this page, there will be labels for different house features which you'll have to enter
+### -> Then click on Predict button provided which will give you the predicted price as output.
+
 
 ## Thanks
