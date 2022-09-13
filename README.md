@@ -13,4 +13,7 @@ Project is created with:
 * Flask
 * Pandas / Scikit-Learn
 
+## Usage
+* 
+
 ## Thanks
